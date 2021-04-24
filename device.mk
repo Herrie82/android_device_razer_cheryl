@@ -135,7 +135,7 @@ PRODUCT_COPY_FILES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService \
+#    AntHalService \
     com.dsi.ant.antradio_library
 
 PRODUCT_COPY_FILES += \
@@ -157,8 +157,8 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     libz
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
+# PRODUCT_PACKAGES += \
+#    Snap
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -185,8 +185,8 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 # Doze
-PRODUCT_PACKAGES += \
-    CherylDoze
+#PRODUCT_PACKAGES += \
+#    CherylDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -278,10 +278,11 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    NfcNci \
-    SecureElement \
-    Tag
+    com.android.nfc_extras 
+#    \
+#    NfcNci \
+#    SecureElement \
+#    Tag
 
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1-service
@@ -356,21 +357,21 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service
 
 # Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
+# PRODUCT_PACKAGES += \
+#     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+# PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Update engine
-PRODUCT_PACKAGES += \
-    brillo_update_payload \
-    update_engine \
-    update_engine_sideload \
-    update_verifier
+# PRODUCT_PACKAGES += \
+#    brillo_update_payload \
+#    update_engine \
+#    update_engine_sideload \
+#    update_verifier
 
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
+# PRODUCT_PACKAGES_DEBUG += \
+#    update_engine_client
 
 # USB
 PRODUCT_PACKAGES += \
@@ -418,8 +419,8 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+# PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # Call the proprietary setup
 $(call inherit-product, vendor/razer/cheryl/cheryl-vendor.mk)
